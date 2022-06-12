@@ -8,6 +8,12 @@ function concat(...args: Array<string>): string {
   return args.reduce((ac, valor) => ac + valor);
 }
 
+function toUpperCase(...args: string[]): string[] {
+  return args.map((valor) => valor.toUpperCase());
+}
+
 console.log(multiplication(1, 2, 3));
 
 console.log(concat('A', 'B', 'C'));
+
+console.log(toUpperCase('a', 'b', 'c'));
