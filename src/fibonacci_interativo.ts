@@ -1,23 +1,19 @@
-//Código fibonacci para validar se o prettier está ok.
-
-function fibonacci(n: number): void {
-  let total = 2;
+function fibonacci(n: number): number {
   let ant1 = 1;
   let ant2 = 1;
-  console.log(ant1);
-  console.log(ant2);
   let i = 3;
+  let prox = 0;
 
   while (i <= n) {
-    const prox = ant1 + ant2;
-    total += prox;
-    console.log(prox);
+    prox = ant1 + ant2;
     ant2 = ant1;
     ant1 = prox;
     i++;
   }
 
-  console.log('Total: ', total);
+  return prox;
 }
 
-fibonacci(34);
+console.log(fibonacci(10));
+const dados = 0;
+export { dados };
