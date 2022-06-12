@@ -1,13 +1,23 @@
-//Código aleatório para validar se o prettier está ok.
+//Código fibonacci para validar se o prettier está ok.
 
-let arrayDeNumeros: Array<number>;
+function fibonacci(n: number) {
+  let total = 2;
+  let ant1 = 1;
+  let ant2 = 1;
+  console.log(ant1);
+  console.log(ant2);
+  let i = 3;
 
-arrayDeNumeros = [1, 2, 3, 4, 5];
+  while (i <= n) {
+    const prox = ant1 + ant2;
+    total += prox;
+    console.log(prox);
+    ant2 = ant1;
+    ant1 = prox;
+    i++;
+  }
 
-arrayDeNumeros.forEach((element) => {
-  console.log(element);
-});
+  console.log('Total: ', total);
+}
 
-arrayDeNumeros = [1, 2, 3, 4];
-
-console.log(arrayDeNumeros);
+fibonacci(34);
