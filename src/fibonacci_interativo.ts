@@ -1,6 +1,6 @@
 //Código fibonacci para validar se o prettier está ok.
 
-function fibonacci(n: number) {
+function fibonacci(n: number): void {
   let total = 2;
   let ant1 = 1;
   let ant2 = 1;
