@@ -1,5 +1,6 @@
 //Exemplo exclusivo para entender o static e padrão singleton em typescript.
 //O exemplo abaixo é meramente de estudo, não devendo ser replicado em produção, devido a fatores como os dados de conexão estarem fixados no código, etc.
+//O exemplo do curso, os dados de conexão eram passados no construtor, o que era mais falho, pois se fosse passados dados diferentes, somente o primeiro objeto existiria.
 export class Database {
   private static database: Database;
   private host = 'localhost';
