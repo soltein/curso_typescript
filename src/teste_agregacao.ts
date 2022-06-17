@@ -27,5 +27,6 @@ const produto2 = new Produto('Caneta', 2.9);
 const carrinho = new Carrinho();
 carrinho.inserir(produto, produto1, produto2);
 
+console.table(carrinho);
 console.log(carrinho.sum());
 console.log(carrinho.quantidade());
